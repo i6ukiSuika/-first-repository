@@ -1,0 +1,2937 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HslControls</name>
+    </assembly>
+    <members>
+        <member name="T:HslControls.Authorization">
+            <summary>
+            系统的授权类
+            </summary>
+        </member>
+        <member name="M:HslControls.Authorization.#ctor">
+            <summary>
+            示例化一个默认的对象
+            </summary>
+        </member>
+        <member name="M:HslControls.Authorization.#cctor">
+            <summary>
+            静态构造方法
+            </summary>
+        </member>
+        <member name="M:HslControls.Authorization.MD5Encrypt32(System.String)">
+            <summary>
+            32位MD5加密
+            </summary>
+            <param name="password">等待加密的数据信息</param>
+            <returns>返回结果信息</returns>
+        </member>
+        <member name="M:HslControls.Authorization.iashdiadasbdnajsdhjaf">
+            <summary>
+            检查当前的授权类是否可用
+            </summary>
+            <returns>是否可用</returns>
+        </member>
+        <member name="M:HslControls.Authorization.SetAuthorizationCode(System.String)">
+            <summary>
+            设置本组件系统的授权信息，在使用库的控件之前需要激活一次，不然只能使用24小时。
+            </summary>
+            <param name="code">授权码</param>
+        </member>
+        <member name="P:HslControls.HslArrow.EdgeColor">
+            <summary>
+            获取或设置箭头控件的边缘颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslArrow.ArrowDirection">
+            <summary>
+            获取或设置箭头控件的方向
+            </summary>
+        </member>
+        <member name="P:HslControls.HslArrow.ArrowBackColor">
+            <summary>
+            获取或设置箭头背景的颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslArrow.FactorX">
+            <summary>
+            获取或设置横向宽度的比例值，范围0-1
+            </summary>
+        </member>
+        <member name="P:HslControls.HslArrow.FactorY">
+            <summary>
+            获取或设置纵向宽度的比例值，范围0-0.5
+            </summary>
+        </member>
+        <member name="P:HslControls.HslArrow.Text">
+            <summary>
+            获取或设置当前控件的文本
+            </summary>
+        </member>
+        <member name="P:HslControls.HslArrow.TextColor">
+            <summary>
+            获取或设置文本的颜色信息
+            </summary>
+        </member>
+        <member name="P:HslControls.HslArrow.TextSize">
+            <summary>
+            获取或设置文本的大小
+            </summary>
+        </member>
+        <member name="M:HslControls.HslArrow.OnDraw(Android.Graphics.Canvas)">
+            <summary>
+            重绘控件的界面
+            </summary>
+            <param name="canvas">重绘的事件信息</param>
+        </member>
+        <member name="M:HslControls.HslBagFilter.OnDraw(Android.Graphics.Canvas)">
+            <inheritdoc/>
+        </member>
+        <member name="P:HslControls.HslBagFilter.EdgeColor">
+            <summary>
+            获取或设置分类器控件的边缘颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBagFilter.CenterColor">
+            <summary>
+            获取或设置分类器控件的中心颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBagFilter.BorderColor">
+            <summary>
+            获取或设置分类器控件的边缘颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBarChart.ColorLinesAndText">
+            <summary>
+            获取或设置坐标轴及相关信息文本的颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBarChart.UseGradient">
+            <summary>
+            获取或设置本条形图控件是否使用渐进色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBarChart.BarBackColor">
+            <summary>
+            获取或设置柱状图的背景颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBarChart.ColorDashLines">
+            <summary>
+            获取或设置虚线的颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBarChart.IsRenderDashLine">
+            <summary>
+            获取或设置虚线是否进行显示
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBarChart.ValueSegment">
+            <summary>
+            获取或设置图形的纵轴分段数
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBarChart.ValueMaxLeft">
+            <summary>
+            获取或设置图形的纵坐标的最大值，该值必须大于最小值，该值为负数，最大值即为自动适配。
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBarChart.ValueMinLeft">
+            <summary>
+            获取或设置图形的纵坐标的最小值，该值必须小于最大值
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBarChart.Title">
+            <summary>
+            获取或设置图标的标题信息
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBarChart.IsShowBarValue">
+            <summary>
+            获取或设置是否显示柱状图的值文本
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBarChart.ShowBarValueFormat">
+            <summary>
+            获取或设置柱状图显示值的格式化信息，可以带单位
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBarChart.BarPercentWidth">
+            <summary>
+            获取或设置柱状图占平均宽度的百分比，默认0.8，即80%
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBarChart.TextSize">
+            <summary>
+            获取或设置文本的大小
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBarChart.TextColor">
+            <summary>
+            获取或设置文本的颜色
+            </summary>
+        </member>
+        <member name="M:HslControls.HslBarChart.SetDataSource(System.Int32[])">
+            <summary>
+            设置柱形图的数据内容
+            </summary>
+            <param name="data">数据的集合</param>
+        </member>
+        <member name="M:HslControls.HslBarChart.SetDataSource(System.Int32[],System.String[])">
+            <summary>
+            设置柱形图的数据内容
+            </summary>
+            <param name="data">数据的集合</param>
+            <param name="texts">底部的描述信息</param>
+        </member>
+        <member name="M:HslControls.HslBarChart.SetDataSource(System.Int32[],System.String[],Android.Graphics.Color[])">
+            <summary>
+            设置柱形图的数据内容
+            </summary>
+            <param name="data">数据的集合</param>
+            <param name="texts">底部的描述信息</param>
+            <param name="colors">每个柱形图的颜色</param>
+        </member>
+        <member name="M:HslControls.HslBarChart.OnDraw(Android.Graphics.Canvas)">
+            <summary>
+            重绘控件的
+            </summary>
+            <param name="canvas">重绘事件</param>
+        </member>
+        <member name="M:HslControls.HslBarChart.AddLeftAuxiliary(System.Single)">
+            <summary>
+            新增一条左侧的辅助线，使用默认的文本颜色
+            </summary>
+            <param name="value">数据值</param>
+        </member>
+        <member name="M:HslControls.HslBarChart.AddLeftAuxiliary(System.Single,Android.Graphics.Color)">
+            <summary>
+            新增一条左侧的辅助线，使用指定的颜色
+            </summary>
+            <param name="value">数据值</param>
+            <param name="lineColor">线条颜色</param>
+        </member>
+        <member name="M:HslControls.HslBarChart.AddLeftAuxiliary(System.Single,Android.Graphics.Color,System.Single)">
+            <summary>
+            新增一条左侧的辅助线
+            </summary>
+            <param name="value">数据值</param>
+            <param name="lineColor">线条颜色</param>
+            <param name="lineThickness">线条宽度</param>
+        </member>
+        <member name="M:HslControls.HslBarChart.RemoveAuxiliary(System.Single)">
+            <summary>
+            移除所有的指定值的辅助曲线，包括左边的和右边的
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:HslControls.HslBarChart.RemoveAllAuxiliary">
+            <summary>
+            移除所有的辅助线
+            </summary>
+        </member>
+        <member name="T:HslControls.AuxiliaryLine">
+            <summary>
+            辅助线对象
+            </summary>
+        </member>
+        <member name="P:HslControls.AuxiliaryLine.Value">
+            <summary>
+            实际的数据值
+            </summary>
+        </member>
+        <member name="P:HslControls.AuxiliaryLine.PaintValue">
+            <summary>
+            实际的数据绘制的Y轴位置
+            </summary>
+        </member>
+        <member name="P:HslControls.AuxiliaryLine.PaintValueBackUp">
+            <summary>
+            实际的数据绘制的Y轴位置，备份使用的
+            </summary>
+        </member>
+        <member name="P:HslControls.AuxiliaryLine.LineColor">
+            <summary>
+            辅助线的颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.AuxiliaryLine.LineThickness">
+            <summary>
+            辅助线的宽度
+            </summary>
+        </member>
+        <member name="P:HslControls.AuxiliaryLine.LineTextBrush">
+            <summary>
+            辅助线文本的画刷
+            </summary>
+        </member>
+        <member name="P:HslControls.AuxiliaryLine.IsLeftFrame">
+            <summary>
+            是否左侧参考系，True为左侧，False为右侧
+            </summary>
+        </member>
+        <member name="M:HslControls.AuxiliaryLine.Dispose">
+            <summary>
+            释放内存信息
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBattery.BatteryBackColor">
+            <summary>
+            获取或设置电池的背景颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBattery.Value">
+            <summary>
+            获取或设置当前的数值
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBattery.ValueMax">
+            <summary>
+            获取或设置当前数值的最大值
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBattery.ValueMin">
+            <summary>
+            获取或设置当前数值的最小值
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBattery.BatteryStyle">
+            <summary>
+            获取或设置电池控件是否是横向的还是纵向的
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBattery.IsTextRender">
+            <summary>
+            获取或设置是否显示文本提示信息的文本
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBattery.StringFormat">
+            <summary>
+            获取或设置显示的文本的信息内容，默认是{0} %
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBattery.Color1">
+            <summary>
+            获取或设置电池的第一区间的前景颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBattery.Color2">
+            <summary>
+            获取或设置电池的第二区间的前景颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBattery.Color3">
+            <summary>
+            获取或设置电池的第三区间的前景颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBattery.Color4">
+            <summary>
+            获取或设置电池的第四区间的前景颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBattery.Color5">
+            <summary>
+            获取或设置电池的第五区间的前景颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBattery.Separatrix1">
+            <summary>
+            获取或设置电池的第一区间和第二区间的分割值的百分比，默认0.85
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBattery.Separatrix2">
+            <summary>
+            获取或设置电池的第二区间和第三区间的分割值的百分比，默认0.60
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBattery.Separatrix3">
+            <summary>
+            获取或设置电池的第三区间和第四区间的分割值的百分比，默认0.40
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBattery.Separatrix4">
+            <summary>
+            获取或设置电池的第四区间和第五区间的分割值的百分比，默认0.15
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBattery.UseAnimation">
+            <summary>
+            获取或设置当前的控件是否启用动画信息
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBattery.AnimationTime">
+            <summary>
+            获取或设置动画的时间
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBattery.TextSize">
+            <summary>
+            获取或设置文本的大小
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBattery.TextColor">
+            <summary>
+            获取或设置文本的颜色
+            </summary>
+        </member>
+        <member name="M:HslControls.HslBattery.OnDraw(Android.Graphics.Canvas)">
+            <summary>
+            重绘控件的外观
+            </summary>
+            <param name="canvas">Canvas的画板信息</param>
+        </member>
+        <member name="M:HslControls.HslBattery.PaintMain(Android.Graphics.Canvas,System.Single,System.Single)">
+            <summary>
+            本控件的主要绘制方法
+            </summary>
+            <param name="canvas">绘图对象</param>
+            <param name="width">宽度</param>
+            <param name="height">高度</param>
+        </member>
+        <member name="P:HslControls.HslBottle.BackColor">
+            <summary>
+            获取或设置控件的背景色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBottle.Value">
+            <summary>
+            获取或设置瓶子的液位值。
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBottle.IsOpen">
+            <summary>
+            获取或设置瓶子是否处于打开的状态。
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBottle.BottleTag">
+            <summary>
+            获取或设置瓶子的标签信息，用于绘制在瓶子上的信息。
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBottle.HeadTag">
+            <summary>
+            获取或设置瓶子的备注信息，用于绘制在瓶子顶部的信息。
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBottle.DockHeight">
+            <summary>
+            获取或设置控件底座的高度
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBottle.ForeColorEdge">
+            <summary>
+            获取或设置前景色的边缘颜色内容
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBottle.ForeColorCenter">
+            <summary>
+            获取或设置前景色的中心颜色内容
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBottle.ForeColorTop">
+            <summary>
+            获取或设置前景色的顶部颜色内容
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBottle.BackColorEdge">
+            <summary>
+            获取或设置背景色的边缘颜色内容
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBottle.BackColorCenter">
+            <summary>
+            获取或设置背景色的中心颜色内容
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBottle.BackColorTop">
+            <summary>
+            获取或设置背景色的顶部颜色内容
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBottle.TextSize">
+            <summary>
+            获取或设置控件的字体大小
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBottle.UseAnimation">
+            <summary>
+            当值改变的时候是否使用动画
+            </summary>
+        </member>
+        <member name="P:HslControls.HslBottle.AnimationTime">
+            <summary>
+            获取或设置动画的时间
+            </summary>
+        </member>
+        <member name="M:HslControls.HslBottle.OnDraw(Android.Graphics.Canvas)">
+            <summary>
+            重绘控件的外观
+            </summary>
+            <param name="canvas">Canvas的画板信息</param>
+        </member>
+        <member name="P:HslControls.HslClassifier.Text">
+            <summary>
+            获取或设置当前控件的文本
+            </summary>
+        </member>
+        <member name="P:HslControls.HslClassifier.EdgeColor">
+            <summary>
+            获取或设置边缘的颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslClassifier.TextSize">
+            <summary>
+            获取或设置文本的大小
+            </summary>
+        </member>
+        <member name="P:HslControls.HslClassifier.TextColor">
+            <summary>
+            获取或设置文本的颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslClassifier.CenterColor">
+            <summary>
+            获取或设置分类器控件的中心颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslClassifier.BorderColor">
+            <summary>
+            获取或设置分类器控件的边缘颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslClassifier.TextBackColor">
+            <summary>
+            获取或设置分类器控件文本的背景颜色
+            </summary>
+        </member>
+        <member name="M:HslControls.HslClassifier.OnDraw(Android.Graphics.Canvas)">
+            <summary>
+            重绘控件的
+            </summary>
+            <param name="canvas">重绘事件</param>
+        </member>
+        <member name="P:HslControls.HslCncCenter.CncDoorState">
+            <summary>
+            获取或设置cnc门开合的情况，0为完全打开，100为完全闭合
+            </summary>
+        </member>
+        <member name="P:HslControls.HslCncCenter.LightRed">
+            <summary>
+            是否显示红灯的信息
+            </summary>
+        </member>
+        <member name="P:HslControls.HslCncCenter.LightYellow">
+            <summary>
+            是否显示黄灯的信息
+            </summary>
+        </member>
+        <member name="P:HslControls.HslCncCenter.LightGreen">
+            <summary>
+            是否显示绿灯的信息
+            </summary>
+        </member>
+        <member name="M:HslControls.HslCncCenter.SetDoorState(System.Single,System.Double)">
+            <summary>
+            使用动画的形式来操作门，需要指定门的开关状态，0是开，100是关，并指定动画时间
+            </summary>
+            <param name="doorState">门的开关状态，0是开，100是关</param>
+            <param name="time">动画时间</param>
+        </member>
+        <member name="M:HslControls.HslCncCenter.SetDoorState(System.Single)">
+            <summary>
+            使用动画的形式来操作门，需要指定门的开关状态，0是开，100是关
+            </summary>
+            <param name="doorState">门的开关状态，0是开，100是关</param>
+        </member>
+        <member name="M:HslControls.HslCncCenter.OnDraw(Android.Graphics.Canvas)">
+            <summary>
+            重绘控件的
+            </summary>
+            <param name="canvas">重绘事件</param>
+        </member>
+        <member name="P:HslControls.HslConveyer.MoveSpeed">
+            <summary>
+            获取或设置传送带流动的速度，0为静止，正数为正向流动，负数为反向流动
+            </summary>
+        </member>
+        <member name="P:HslControls.HslConveyer.ConveyerActive">
+            <summary>
+            获取或设置传送带是否激活流动状态
+            </summary>
+        </member>
+        <member name="P:HslControls.HslConveyer.CircularRadius">
+            <summary>
+            获取或设置两侧的圆圈的半径，当且仅当ConveyerStyle属性不为Horizontal枚举时成立
+            </summary>
+        </member>
+        <member name="P:HslControls.HslConveyer.ConveyerStyle">
+            <summary>
+            获取或设置传送带的样式，水平，还是上坡，还是下坡
+            </summary>
+        </member>
+        <member name="M:HslControls.HslConveyer.OnDraw(Android.Graphics.Canvas)">
+            <summary>
+            重绘控件的界面
+            </summary>
+            <param name="canvas">重绘的事件信息</param>
+        </member>
+        <member name="T:HslControls.HslConveyerStyle">
+            <summary>
+            皮带链的样式，选择水平还是下坡，还是上坡
+            </summary>
+        </member>
+        <member name="F:HslControls.HslConveyerStyle.Horizontal">
+            <summary>
+            水平
+            </summary>
+        </member>
+        <member name="F:HslControls.HslConveyerStyle.Downslope">
+            <summary>
+            下坡
+            </summary>
+        </member>
+        <member name="F:HslControls.HslConveyerStyle.Upslope">
+            <summary>
+            上坡
+            </summary>
+        </member>
+        <member name="T:HslControls.HslCoolFan">
+            <summary>
+            冷却风扇的控件
+            </summary>
+        </member>
+        <member name="P:HslControls.HslCoolFan.Text">
+            <summary>
+            获取或设置当前控件的文本
+            </summary>
+        </member>
+        <member name="P:HslControls.HslCoolFan.TextColor">
+            <summary>
+            获取或设置文本的颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslCoolFan.TextSize">
+            <summary>
+            获取或是设置文本的大小的状态。
+            </summary>
+        </member>
+        <member name="P:HslControls.HslCoolFan.MoveSpeed">
+            <summary>
+            获取或设置泵的动画速度，0为静止，正数为正向流动，负数为反向流动
+            </summary>
+        </member>
+        <member name="M:HslControls.HslCoolFan.OnDraw(Android.Graphics.Canvas)">
+            <summary>
+            重绘控件的界面
+            </summary>
+            <param name="canvas">重绘的事件信息</param>
+        </member>
+        <member name="P:HslControls.HslCurve.ValueMaxLeft">
+            <summary>
+            获取或设置图形的纵坐标的最大值，该值必须大于最小值
+            </summary>
+        </member>
+        <member name="P:HslControls.HslCurve.ValueMinLeft">
+            <summary>
+            获取或设置图形的纵坐标的最小值，该值必须小于最大值
+            </summary>
+        </member>
+        <member name="P:HslControls.HslCurve.ValueMaxRight">
+            <summary>
+            获取或设置图形的纵坐标的最大值，该值必须大于最小值
+            </summary>
+        </member>
+        <member name="P:HslControls.HslCurve.ValueMinRight">
+            <summary>
+            获取或设置图形的纵坐标的最小值，该值必须小于最大值
+            </summary>
+        </member>
+        <member name="P:HslControls.HslCurve.ValueSegment">
+            <summary>
+            获取或设置图形的纵轴分段数
+            </summary>
+        </member>
+        <member name="P:HslControls.HslCurve.IsAbscissaStrech">
+            <summary>
+            获取或设置所有的数据是否强制在一个界面里显示
+            </summary>
+        </member>
+        <member name="P:HslControls.HslCurve.StrechDataCountMax">
+            <summary>
+            获取或设置拉伸模式下的最大数据量
+            </summary>
+        </member>
+        <member name="P:HslControls.HslCurve.IsRenderDashLine">
+            <summary>
+            获取或设置虚线是否进行显示
+            </summary>
+        </member>
+        <member name="P:HslControls.HslCurve.ColorLinesAndText">
+            <summary>
+            获取或设置坐标轴及相关信息文本的颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslCurve.ColorDashLines">
+            <summary>
+            获取或设置虚线的颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslCurve.IntervalAbscissaText">
+            <summary>
+            获取或设置纵向虚线的分隔情况，单位为多少个数据
+            </summary>
+        </member>
+        <member name="P:HslControls.HslCurve.TextAddFormat">
+            <summary>
+            获取或设置实时数据新增时文本相对应于时间的格式化字符串，默认HH:mm
+            </summary>
+        </member>
+        <member name="P:HslControls.HslCurve.Title">
+            <summary>
+            获取或设置图标的标题信息
+            </summary>
+        </member>
+        <member name="P:HslControls.HslCurve.IsRenderRightCoordinate">
+            <summary>
+            获取或设置是否显示右侧的坐标系信息
+            </summary>
+        </member>
+        <member name="P:HslControls.HslCurve.CurveNameWidth">
+            <summary>
+            获取或设置曲线名称的布局宽度，默认为150
+            </summary>
+        </member>
+        <member name="P:HslControls.HslCurve.TextSize">
+            <summary>
+            获取或设置字体的大小
+            </summary>
+        </member>
+        <member name="P:HslControls.HslCurve.PointsRadius">
+            <summary>
+            获取或设置所有的数据点显示的半径大小，默认是0，不显示数据点
+            </summary>
+        </member>
+        <member name="M:HslControls.HslCurve.SetCurveText(System.String[])">
+            <summary>
+            设置曲线的横坐标文本，适用于显示一些固定的曲线信息
+            </summary>
+            <param name="descriptions">应该和曲线的点数一致</param>
+        </member>
+        <member name="M:HslControls.HslCurve.SetLeftCurve(System.String,System.Single[])">
+            <summary>
+            新增或修改一条指定关键字的左参考系曲线数据，需要指定数据，颜色随机，没有数据上限，线条宽度为1
+            </summary>
+            <param name="key">曲线关键字</param>
+            <param name="data">曲线的具体数据</param>
+        </member>
+        <member name="M:HslControls.HslCurve.SetLeftCurve(System.String,System.Single[],Android.Graphics.Color)">
+            <summary>
+            新增或修改一条指定关键字的左参考系曲线数据，需要指定数据，颜色，没有数据上限，线条宽度为1
+            </summary>
+            <param name="key">曲线关键字</param>
+            <param name="data">数据内容</param>
+            <param name="lineColor">曲线颜色</param>
+        </member>
+        <member name="M:HslControls.HslCurve.SetLeftCurve(System.String,System.Single[],Android.Graphics.Color,HslControls.CurveStyle)">
+            <summary>
+            新增或修改一条指定关键字的左参考系曲线数据，需要指定数据，颜色，没有数据上限，线条宽度为1
+            </summary>
+            <param name="key">曲线关键字</param>
+            <param name="data">数据内容</param>
+            <param name="lineColor">曲线颜色</param>
+            <param name="style">曲线的样式</param>
+        </member>
+        <member name="M:HslControls.HslCurve.SetRightCurve(System.String,System.Single[])">
+            <summary>
+            新增或修改一条指定关键字的右参考系曲线数据，需要指定数据，颜色随机，没有数据上限，线条宽度为1
+            </summary>
+            <param name="key">曲线关键字</param>
+            <param name="data">数据内容</param>
+        </member>
+        <member name="M:HslControls.HslCurve.SetRightCurve(System.String,System.Single[],Android.Graphics.Color)">
+            <summary>
+            新增或修改一条指定关键字的右参考系曲线数据，需要指定数据，颜色，没有数据上限，线条宽度为1
+            </summary>
+            <param name="key">曲线关键字</param>
+            <param name="data">数据内容</param>
+            <param name="lineColor">曲线颜色</param>
+        </member>
+        <member name="M:HslControls.HslCurve.SetRightCurve(System.String,System.Single[],Android.Graphics.Color,HslControls.CurveStyle)">
+            <summary>
+            新增或修改一条指定关键字的右参考系曲线数据，需要指定数据，颜色，没有数据上限，线条宽度为1
+            </summary>
+            <param name="key">曲线关键字</param>
+            <param name="data">数据内容</param>
+            <param name="lineColor">曲线颜色</param>
+            <param name="style">曲线是否平滑</param>
+        </member>
+        <member name="M:HslControls.HslCurve.SetCurve(System.String,System.Boolean,System.Single[],Android.Graphics.Color,System.Single,HslControls.CurveStyle)">
+            <summary>
+            新增或修改一条指定关键字的曲线数据，需要指定参考系及数据，颜色，线条宽度
+            </summary>
+            <param name="key">曲线关键字</param>
+            <param name="isLeft">是否以左侧坐标轴为参照系</param>
+            <param name="data">数据</param>
+            <param name="lineColor">线条颜色</param>
+            <param name="thickness">线条宽度</param>
+            <param name="style">曲线的样式</param>
+        </member>
+        <member name="M:HslControls.HslCurve.RemoveCurve(System.String)">
+            <summary>
+            移除指定关键字的曲线
+            </summary>
+            <param name="key">曲线关键字</param>
+        </member>
+        <member name="M:HslControls.HslCurve.RemoveAllCurve">
+            <summary>
+            移除所有的曲线
+            </summary>
+        </member>
+        <member name="M:HslControls.HslCurve.RemoveAllCurveData">
+            <summary>
+            移除所有曲线的数据
+            </summary>
+        </member>
+        <member name="M:HslControls.HslCurve.GetCurveItem(System.String)">
+            <summary>
+            获取曲线图中已经存在的曲线对象，用于动态修改一些复杂的数据信息，如线宽，标记点，修改以前的数据内容等等
+            </summary>
+            <param name="key">关键字</param>
+            <returns>曲线对象信息</returns>
+        </member>
+        <member name="M:HslControls.HslCurve.AddCurveData(System.String,System.Single[],System.String[],System.Boolean)">
+            <summary>
+            新增指定关键字曲线的一个数据，注意该关键字的曲线必须存在，否则无效
+            </summary>
+            <param name="key">新增曲线的关键字</param>
+            <param name="values">数据值</param>
+            <param name="markTexts">标记的文本信息</param>
+            <param name="isUpdateUI">是否刷新界面</param>
+        </member>
+        <member name="M:HslControls.HslCurve.AddCurveData(System.String,System.Single)">
+            <summary>
+            新增指定关键字曲线的一个数据，注意该关键字的曲线必须存在，否则无效
+            </summary>
+            <param name="key">曲线的关键字</param>
+            <param name="value">数据值</param>
+        </member>
+        <member name="M:HslControls.HslCurve.AddCurveData(System.String,System.Single,System.String)">
+            <summary>
+            新增指定关键字曲线的一个数据，注意该关键字的曲线必须存在，否则无效
+            </summary>
+            <param name="key">曲线的关键字</param>
+            <param name="value">数据值</param>
+            <param name="markText">标记的本文信息</param>
+        </member>
+        <member name="M:HslControls.HslCurve.AddCurveData(System.String,System.Single[])">
+            <summary>
+            新增指定关键字曲线的一组数据，注意该关键字的曲线必须存在，否则无效
+            </summary>
+            <param name="key">曲线的关键字</param>
+            <param name="values">数组值</param>
+        </member>
+        <member name="M:HslControls.HslCurve.AddCurveData(System.String,System.Single[],System.String[])">
+            <summary>
+            新增指定关键字曲线的一组数据，注意该关键字的曲线必须存在，否则无效
+            </summary>
+            <param name="key">曲线的关键字</param>
+            <param name="values">数组值</param>
+            <param name="markTexts">标记的本文信息</param>
+        </member>
+        <member name="M:HslControls.HslCurve.AddCurveData(System.String[],System.Single[])">
+            <summary>
+            新增指定关键字数组曲线的一组数据，注意该关键字的曲线必须存在，否则无效，一个数据对应一个数组
+            </summary>
+            <param name="keys">曲线的关键字数组</param>
+            <param name="values">数组值</param>
+        </member>
+        <member name="M:HslControls.HslCurve.AddCurveData(System.String,System.String[],System.Single[])">
+            <summary>
+            新增指定关键字数组曲线的一组数据，注意该关键字的曲线必须存在，否则无效，一个数据对应一个数组
+            </summary>
+            <param name="axisText">自定义的横轴坐标数据</param>
+            <param name="keys">曲线的关键字数组</param>
+            <param name="values">数组值</param>
+        </member>
+        <member name="M:HslControls.HslCurve.AddCurveData(System.String[],System.Single[],System.String[])">
+            <summary>
+            新增指定关键字数组曲线的一组数据，注意该关键字的曲线必须存在，否则无效，一个数据对应一个数组
+            </summary>
+            <param name="keys">曲线的关键字数组</param>
+            <param name="values">数组值</param>
+            <param name="markTexts">标记的文本信息</param>
+        </member>
+        <member name="M:HslControls.HslCurve.AddCurveData(System.String,System.String[],System.Single[],System.String[])">
+            <summary>
+            新增指定关键字数组曲线的一组数据，注意该关键字的曲线必须存在，否则无效，一个数据对应一个数组
+            </summary>
+            <param name="axisText">自定义的横轴坐标数据</param>
+            <param name="keys">曲线的关键字数组</param>
+            <param name="values">数组值</param>
+            <param name="markTexts">标记的文本信息</param>
+        </member>
+        <member name="M:HslControls.HslCurve.SetCurveVisible(System.String,System.Boolean)">
+            <summary>
+            设置一条曲线是否是可见的，如果该曲线不存在，则无效。
+            </summary>
+            <param name="key">关键字</param>
+            <param name="visible">是否可见</param>
+        </member>
+        <member name="M:HslControls.HslCurve.SetCurveVisible(System.String[],System.Boolean)">
+            <summary>
+            设置多条曲线是否是可见的，如果该曲线不存在，则无效。
+            </summary>
+            <param name="keys">关键字</param>
+            <param name="visible">是否可见</param>
+        </member>
+        <member name="M:HslControls.HslCurve.AddLeftAuxiliary(System.Single)">
+            <summary>
+            新增一条左侧的辅助线，使用默认的文本颜色
+            </summary>
+            <param name="value">数据值</param>
+        </member>
+        <member name="M:HslControls.HslCurve.AddLeftAuxiliary(System.Single,Android.Graphics.Color)">
+            <summary>
+            新增一条左侧的辅助线，使用指定的颜色
+            </summary>
+            <param name="value">数据值</param>
+            <param name="lineColor">线条颜色</param>
+        </member>
+        <member name="M:HslControls.HslCurve.AddLeftAuxiliary(System.Single,Android.Graphics.Color,System.Single)">
+            <summary>
+            新增一条左侧的辅助线
+            </summary>
+            <param name="value">数据值</param>
+            <param name="lineColor">线条颜色</param>
+            <param name="lineThickness">线条宽度</param>
+        </member>
+        <member name="M:HslControls.HslCurve.AddRightAuxiliary(System.Single)">
+            <summary>
+            新增一条右侧的辅助线，使用默认的文本颜色
+            </summary>
+            <param name="value">数据值</param>
+        </member>
+        <member name="M:HslControls.HslCurve.AddRightAuxiliary(System.Single,Android.Graphics.Color)">
+            <summary>
+            新增一条右侧的辅助线，使用指定的颜色
+            </summary>
+            <param name="value">数据值</param>
+            <param name="lineColor">线条颜色</param>
+        </member>
+        <member name="M:HslControls.HslCurve.AddRightAuxiliary(System.Single,Android.Graphics.Color,System.Single)">
+            <summary>
+            新增一条右侧的辅助线
+            </summary>
+            <param name="value">数据值</param>
+            <param name="lineColor">线条颜色</param>
+            <param name="lineThickness">线条宽度</param>
+        </member>
+        <member name="M:HslControls.HslCurve.RemoveAuxiliary(System.Single)">
+            <summary>
+            移除所有的指定值的辅助曲线，包括左边的和右边的
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:HslControls.HslCurve.RemoveAllAuxiliary">
+            <summary>
+            移除所有的辅助线
+            </summary>
+        </member>
+        <member name="M:HslControls.HslCurve.AddAuxiliaryLabel(HslControls.AuxiliaryLable)">
+            <summary>
+            新增一条辅助标签
+            </summary>
+            <param name="auxiliaryLable">描述的标签值</param>
+        </member>
+        <member name="M:HslControls.HslCurve.RemoveAuxiliaryLable(HslControls.AuxiliaryLable)">
+            <summary>
+            移除指定的辅助标签
+            </summary>
+            <param name="auxiliaryLable">等待删除的对象</param>
+        </member>
+        <member name="M:HslControls.HslCurve.RemoveAllAuxiliaryLable">
+            <summary>
+            移除所有的辅助标签
+            </summary>
+        </member>
+        <member name="M:HslControls.HslCurve.AddMarkText(HslControls.HslMarkText)">
+            <summary>
+            新增一个标记的文本信息
+            </summary>
+            <param name="markText">文本标记信息</param>
+        </member>
+        <member name="M:HslControls.HslCurve.RemoveMarkText(HslControls.HslMarkText)">
+            <summary>
+            移除一个标记的文本信息
+            </summary>
+            <param name="markText">文本标记信息</param>
+        </member>
+        <member name="M:HslControls.HslCurve.RemoveAllMarkText">
+            <summary>
+            移除所有的标记的文本信息
+            </summary>
+        </member>
+        <member name="M:HslControls.HslCurve.OnDraw(Android.Graphics.Canvas)">
+            <summary>
+            重绘控件的
+            </summary>
+            <param name="canvas">重绘事件</param>
+        </member>
+        <member name="T:HslControls.HslMarkLine">
+            <summary>
+            曲线图里的直线标记信息
+            </summary>
+        </member>
+        <member name="M:HslControls.HslMarkLine.#ctor">
+            <summary>
+            实例化一个默认的对象，默认参考左坐标轴，颜色为亮蓝色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslMarkLine.TextColor">
+            <summary>
+            文本的颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslMarkLine.CircleColor">
+            <summary>
+            圆圈的画刷
+            </summary>
+        </member>
+        <member name="P:HslControls.HslMarkLine.LinePenColor">
+            <summary>
+            线段颜色的标记
+            </summary>
+        </member>
+        <member name="P:HslControls.HslMarkLine.Points">
+            <summary>
+            所有的点的集合
+            </summary>
+        </member>
+        <member name="P:HslControls.HslMarkLine.Marks">
+            <summary>
+            所有的标记点的集合
+            </summary>
+        </member>
+        <member name="P:HslControls.HslMarkLine.IsLineClosed">
+            <summary>
+            线段是否闭合
+            </summary>
+        </member>
+        <member name="P:HslControls.HslMarkLine.IsLeftFrame">
+            <summary>
+            是否参照左侧的坐标轴
+            </summary>
+        </member>
+        <member name="T:HslControls.HslMarkText">
+            <summary>
+            曲线图里的文本标记信息
+            </summary>
+        </member>
+        <member name="M:HslControls.HslMarkText.#ctor">
+            <summary>
+            实例化一个默认的对象
+            </summary>
+        </member>
+        <member name="P:HslControls.HslMarkText.CurveKey">
+            <summary>
+            针对的曲线的关键字
+            </summary>
+        </member>
+        <member name="P:HslControls.HslMarkText.Index">
+            <summary>
+            位置的索引
+            </summary>
+        </member>
+        <member name="P:HslControls.HslMarkText.MarkText">
+            <summary>
+            标记的文本
+            </summary>
+        </member>
+        <member name="P:HslControls.HslMarkText.TextColor">
+            <summary>
+            文本的颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslMarkText.CircleColor">
+            <summary>
+            圆圈的画刷
+            </summary>
+        </member>
+        <member name="P:HslControls.HslMarkText.PositionStyle">
+            <summary>
+            点的标记状态
+            </summary>
+        </member>
+        <member name="M:HslControls.HslMarkText.CalculateDirectionFromDataIndex(System.Single[],System.Int32)">
+            <summary>
+            根据数据和索引计算文本的绘制的位置
+            </summary>
+            <param name="data">数据信息</param>
+            <param name="Index">索引</param>
+            <returns>绘制的位置信息</returns>
+        </member>
+        <member name="F:HslControls.HslMarkText.MarkTextOffect">
+            <summary>
+            文本的便宜标记信息
+            </summary>
+        </member>
+        <member name="T:HslControls.MarkTextPositionStyle">
+            <summary>
+            标记点的样式信息
+            </summary>
+        </member>
+        <member name="F:HslControls.MarkTextPositionStyle.Up">
+            <summary>
+            在标记点的上方
+            </summary>
+        </member>
+        <member name="F:HslControls.MarkTextPositionStyle.Right">
+            <summary>
+            在标记点的右侧
+            </summary>
+        </member>
+        <member name="F:HslControls.MarkTextPositionStyle.Down">
+            <summary>
+            在标记点的下方
+            </summary>
+        </member>
+        <member name="F:HslControls.MarkTextPositionStyle.Left">
+            <summary>
+            在标记点的左侧
+            </summary>
+        </member>
+        <member name="F:HslControls.MarkTextPositionStyle.Auto">
+            <summary>
+            自动选择位置
+            </summary>
+        </member>
+        <member name="T:HslControls.HslMarkSectionBase">
+            <summary>
+            所有标记信息的基类，支持区间的表示
+            </summary>
+        </member>
+        <member name="P:HslControls.HslMarkSectionBase.StartIndex">
+            <summary>
+            开始的数据位置
+            </summary>
+        </member>
+        <member name="P:HslControls.HslMarkSectionBase.EndIndex">
+            <summary>
+            结束的数据位置
+            </summary>
+        </member>
+        <member name="T:HslControls.HslMarkBackSection">
+            <summary>
+            在曲线控件中额外标记的区间显示，可以设置不同的背景颜色
+            </summary>
+        </member>
+        <member name="M:HslControls.HslMarkBackSection.#ctor">
+            <summary>
+            实例化一个默认的对象
+            </summary>
+        </member>
+        <member name="P:HslControls.HslMarkBackSection.BackColor">
+            <summary>
+            特殊标记的区间的背景色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslMarkBackSection.MarkText">
+            <summary>
+            标记文本
+            </summary>
+        </member>
+        <member name="T:HslControls.HslMarkForeSection">
+            <summary>
+            用于前景色标记的区段信息
+            </summary>
+        </member>
+        <member name="M:HslControls.HslMarkForeSection.#ctor">
+            <summary>
+            实例化一个默认的对象
+            </summary>
+        </member>
+        <member name="P:HslControls.HslMarkForeSection.StartHeight">
+            <summary>
+            绘制的起始高度
+            </summary>
+        </member>
+        <member name="P:HslControls.HslMarkForeSection.Height">
+            <summary>
+            绘制是高度信息
+            </summary>
+        </member>
+        <member name="P:HslControls.HslMarkForeSection.IsRenderTimeText">
+            <summary>
+            是否显示开始和结束的信息
+            </summary>
+        </member>
+        <member name="P:HslControls.HslMarkForeSection.LinePenColor">
+            <summary>
+            特殊标记的区间的背景色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslMarkForeSection.FontColor">
+            <summary>
+            字体的颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslMarkForeSection.MarkText">
+            <summary>
+            特殊标记的文本，如果不为空，则显示出来
+            </summary>
+        </member>
+        <member name="P:HslControls.HslMarkForeSection.CursorTexts">
+            <summary>
+            光标处显示的信息
+            </summary>
+        </member>
+        <member name="T:HslControls.AuxiliaryLable">
+            <summary>
+            辅助标签的信息
+            </summary>
+        </member>
+        <member name="M:HslControls.AuxiliaryLable.#ctor">
+            <summary>
+            实例化一个对象
+            </summary>
+        </member>
+        <member name="P:HslControls.AuxiliaryLable.Text">
+            <summary>
+            标签的文本信息
+            </summary>
+        </member>
+        <member name="P:HslControls.AuxiliaryLable.TextBrush">
+            <summary>
+            标签的文本颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.AuxiliaryLable.TextBack">
+            <summary>
+            标签的文本背景
+            </summary>
+        </member>
+        <member name="P:HslControls.AuxiliaryLable.LocationX">
+            <summary>
+            标签的横轴位置，小于1则为百分比，大于1则为绝对值
+            </summary>
+        </member>
+        <member name="T:HslControls.HslCurveItem">
+            <summary>
+            曲线数据对象
+            </summary>
+        </member>
+        <member name="M:HslControls.HslCurveItem.#ctor">
+            <summary>
+            实例化一个对象
+            </summary>
+        </member>
+        <member name="F:HslControls.HslCurveItem.Data">
+            <summary>
+            数据
+            </summary>
+        </member>
+        <member name="F:HslControls.HslCurveItem.MarkText">
+            <summary>
+            标记文本
+            </summary>
+        </member>
+        <member name="P:HslControls.HslCurveItem.LineThickness">
+            <summary>
+            线条的宽度
+            </summary>
+        </member>
+        <member name="P:HslControls.HslCurveItem.Style">
+            <summary>
+            当前曲线的显示样式
+            </summary>
+        </member>
+        <member name="P:HslControls.HslCurveItem.LineColor">
+            <summary>
+            曲线颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslCurveItem.IsLeftFrame">
+            <summary>
+            是否左侧参考系，True为左侧，False为右侧
+            </summary>
+        </member>
+        <member name="P:HslControls.HslCurveItem.Visible">
+            <summary>
+            本曲线是否显示出来，默认为显示
+            </summary>
+        </member>
+        <member name="P:HslControls.HslCurveItem.LineRenderVisiable">
+            <summary>
+            用于曲线自身选择是否显示的情况的判断
+            </summary>
+        </member>
+        <member name="P:HslControls.HslCurveItem.TitleRegion">
+            <summary>
+            标题实现的基本区域
+            </summary>
+        </member>
+        <member name="P:HslControls.HslCurveItem.RenderFormat">
+            <summary>
+            本曲线在图形上显示的格式化信息，对历史数据有效
+            </summary>
+        </member>
+        <member name="T:HslControls.CurveStyle">
+            <summary>
+            曲线的样式
+            </summary>
+        </member>
+        <member name="F:HslControls.CurveStyle.LineSegment">
+            <summary>
+            线段，原始的多个点之间的直线连接
+            </summary>
+        </member>
+        <member name="F:HslControls.CurveStyle.Curve">
+            <summary>
+            曲线，相对于线段比较平滑
+            </summary>
+        </member>
+        <member name="F:HslControls.CurveStyle.StepLine">
+            <summary>
+            阶梯线段，采用阶梯的样式表示
+            </summary>
+        </member>
+        <member name="F:HslControls.CurveStyle.StepLineWithoutVertical">
+            <summary>
+            阶梯线段，没有竖向的信息
+            </summary>
+        </member>
+        <member name="P:HslControls.HslDialPlate.CenterColor">
+            <summary>
+            获取或设置仪表控件的中心背景色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslDialPlate.BorderColor">
+            <summary>
+            获取或设置控件的边缘颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslDialPlate.BorderColor2">
+            <summary>
+            获取或设置控件内边缘的背景颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslDialPlate.DialPlateBackgroundColor">
+            <summary>
+            获取或设置当前仪表的主背景色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslDialPlate.IsRenderSegmentText">
+            <summary>
+            获取或设置当前仪表是否显示文本信息
+            </summary>
+        </member>
+        <member name="P:HslControls.HslDialPlate.Segment">
+            <summary>
+            获取或设置当前仪表的分割数量
+            </summary>
+        </member>
+        <member name="P:HslControls.HslDialPlate.MinValue">
+            <summary>
+            获取或设置当前仪表控件的最小值
+            </summary>
+        </member>
+        <member name="P:HslControls.HslDialPlate.MaxValue">
+            <summary>
+            获取或设置当前仪表控件的最大值
+            </summary>
+        </member>
+        <member name="P:HslControls.HslDialPlate.Value">
+            <summary>
+            获取或设置仪表控件的当前值
+            </summary>
+        </member>
+        <member name="P:HslControls.HslDialPlate.UnitText">
+            <summary>
+            获取或设置显示的单位文本信息
+            </summary>
+        </member>
+        <member name="M:HslControls.HslDialPlate.SetMarkValues(System.Collections.Generic.List{HslControls.MarkValue})">
+            <summary>
+            获取或设置当前辅助标记的集合
+            </summary>
+        </member>
+        <member name="M:HslControls.HslDialPlate.SetValueAnimator(System.Single,System.Int64)">
+            <summary>
+            使用动画的方式设置当前的值，可以自己指定动画时间，单位毫秒，默认是200毫秒
+            </summary>
+            <param name="value">新的数值</param>
+            <param name="timeSpan">动画时间</param>
+        </member>
+        <member name="M:HslControls.HslDialPlate.OnDraw(Android.Graphics.Canvas)">
+            <summary>
+            重绘控件的
+            </summary>
+            <param name="canvas">重绘事件</param>
+        </member>
+        <member name="T:HslControls.MarkValue">
+            <summary>
+            刻度标记对象
+            </summary>
+        </member>
+        <member name="M:HslControls.MarkValue.#ctor">
+            <summary>
+            实例化一个默认的对象
+            </summary>
+        </member>
+        <member name="P:HslControls.MarkValue.Value">
+            <summary>
+            当前的数值信息
+            </summary>
+        </member>
+        <member name="P:HslControls.MarkValue.Color">
+            <summary>
+            当前的颜色信息
+            </summary>
+        </member>
+        <member name="P:HslControls.MarkValue.LineWidth">
+            <summary>
+            当前线的宽度信息
+            </summary>
+        </member>
+        <member name="T:HslControls.HslHelper">
+            <summary>
+            绘图类的辅助方法，用于统一所有的绘图逻辑，然后代码精简用的
+            </summary>
+        </member>
+        <member name="M:HslControls.HslHelper.GetFillPaintByColor(Android.Graphics.Color)">
+            <summary>
+            获取指定颜色用于填充的paint对象
+            </summary>
+            <param name="color">颜色对象</param>
+            <returns>Paint对象</returns>
+        </member>
+        <member name="M:HslControls.HslHelper.CanvasDrawTextCenter(Android.Graphics.Canvas,Android.Graphics.Paint,System.String,System.Single,System.Single)">
+            <summary>
+            将文本绘制到中心点去
+            </summary>
+            <param name="canvas"></param>
+            <param name="paint"></param>
+            <param name="text"></param>
+            <param name="x"></param>
+            <param name="y"></param>
+        </member>
+        <member name="M:HslControls.HslHelper.CanvasDrawTextCenter(Android.Graphics.Canvas,Android.Graphics.Color,System.Single,System.String,System.Single,System.Single)">
+            <summary>
+            将文本绘制到中心点去
+            </summary>
+            <param name="canvas"></param>
+            <param name="color"></param>
+            <param name="size"></param>
+            <param name="text"></param>
+            <param name="x"></param>
+            <param name="y"></param>
+        </member>
+        <member name="M:HslControls.HslHelper.CanvasDrawTextCenter(Android.Graphics.Canvas,Android.Graphics.Color,System.Single,System.String,Android.Graphics.RectF)">
+            <summary>
+            将文本绘制到中心点
+            </summary>
+            <param name="canvas"></param>
+            <param name="color"></param>
+            <param name="size"></param>
+            <param name="text"></param>
+            <param name="rectF"></param>
+        </member>
+        <member name="M:HslControls.HslHelper.CanvasDrawTextRight(Android.Graphics.Canvas,Android.Graphics.Color,System.Single,System.String,Android.Graphics.RectF)">
+            <summary>
+            将文本绘制到中心点
+            </summary>
+            <param name="canvas"></param>
+            <param name="color"></param>
+            <param name="size"></param>
+            <param name="text"></param>
+            <param name="rectF"></param>
+        </member>
+        <member name="M:HslControls.HslHelper.CanvasDrawTextLeft(Android.Graphics.Canvas,Android.Graphics.Color,System.Single,System.String,System.Single,System.Single)">
+            <summary>
+            将文本绘制到中心点
+            </summary>
+            <param name="canvas"></param>
+            <param name="color"></param>
+            <param name="size"></param>
+            <param name="text"></param>
+            <param name="x"></param>
+            <param name="y"></param>
+        </member>
+        <member name="M:HslControls.HslHelper.CanvasDrawTextLeft(Android.Graphics.Canvas,Android.Graphics.Paint,System.String,System.Single,System.Single)">
+            <summary>
+            将文本绘制到中心点
+            </summary>
+            <param name="canvas"></param>
+            <param name="paint"></param>
+            <param name="text"></param>
+            <param name="x"></param>
+            <param name="y"></param>
+        </member>
+        <member name="M:HslControls.HslHelper.CanvasDrawTextLeft(Android.Graphics.Canvas,Android.Graphics.Color,System.Single,System.String,Android.Graphics.RectF)">
+            <summary>
+            将文本绘制到左边的中间
+            </summary>
+            <param name="canvas"></param>
+            <param name="color"></param>
+            <param name="size"></param>
+            <param name="text"></param>
+            <param name="rectF"></param>
+        </member>
+        <member name="M:HslControls.HslHelper.CanvasDrawTextLeft(Android.Graphics.Canvas,Android.Graphics.Paint,System.String,Android.Graphics.RectF)">
+            <summary>
+            将文本绘制到左边的中间
+            </summary>
+            <param name="canvas"></param>
+            <param name="paint"></param>
+            <param name="text"></param>
+            <param name="rectF"></param>
+        </member>
+        <member name="M:HslControls.HslHelper.CanvasDrawTextCenter(Android.Graphics.Canvas,Android.Graphics.Paint,System.String,Android.Graphics.RectF)">
+            <summary>
+            将文本绘制到中心点
+            </summary>
+            <param name="canvas"></param>
+            <param name="paint"></param>
+            <param name="text"></param>
+            <param name="rectF"></param>
+        </member>
+        <member name="M:HslControls.HslHelper.CanvasDrawPolygon(Android.Graphics.Canvas,Android.Graphics.Color,System.Single,Android.Graphics.PointF[],System.Boolean)">
+            <summary>
+            根据线段进行画线的操作
+            </summary>
+            <param name="canvas"></param>
+            <param name="color"></param>
+            <param name="strokeWidth"></param>
+            <param name="points"></param>
+            <param name="closed"></param>
+        </member>
+        <member name="M:HslControls.HslHelper.CanvasFillPolygon(Android.Graphics.Canvas,Android.Graphics.Color,Android.Graphics.PointF[])">
+            <summary>
+            将颜色填充到线段里面去
+            </summary>
+            <param name="canvas"></param>
+            <param name="color"></param>
+            <param name="points"></param>
+        </member>
+        <member name="M:HslControls.HslHelper.CanvasFillPolygon(Android.Graphics.Canvas,Android.Graphics.LinearGradient,Android.Graphics.PointF[])">
+            <summary>
+            将颜色填充到线段里面去
+            </summary>
+            <param name="canvas"></param>
+            <param name="linear"></param>
+            <param name="points"></param>
+        </member>
+        <member name="M:HslControls.HslHelper.CanvasFillPolygon(Android.Graphics.Canvas,Android.Graphics.Color,Android.Graphics.Point[])">
+            <summary>
+            将颜色填充到线段里面去
+            </summary>
+            <param name="canvas"></param>
+            <param name="color"></param>
+            <param name="points"></param>
+        </member>
+        <member name="M:HslControls.HslHelper.PaintTriangle(Android.Graphics.Canvas,Android.Graphics.Color,Android.Graphics.Point,System.Int32,HslControls.GraphDirection)">
+            <summary>
+            根据指定的方向绘制一个箭头
+            </summary>
+            <param name="canvas"></param>
+            <param name="color"></param>
+            <param name="point"></param>
+            <param name="size"></param>
+            <param name="direction"></param>
+        </member>
+        <member name="M:HslControls.HslHelper.ComputePaintLocationY(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            计算绘图时的相对偏移值
+            </summary>
+            <param name="max">0-100分的最大值，就是指准备绘制的最大值</param>
+            <param name="min">0-100分的最小值，就是指准备绘制的最小值</param>
+            <param name="height">实际绘图区域的高度</param>
+            <param name="value">需要绘制数据的当前值</param>
+            <returns>相对于0的位置，还需要增加上面的偏值</returns>
+        </member>
+        <member name="M:HslControls.HslHelper.ComputePaintLocationY(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            计算绘图时的相对偏移值
+            </summary>
+            <param name="max">0-100分的最大值，就是指准备绘制的最大值</param>
+            <param name="min">0-100分的最小值，就是指准备绘制的最小值</param>
+            <param name="height">实际绘图区域的高度</param>
+            <param name="value">需要绘制数据的当前值</param>
+            <returns>相对于0的位置，还需要增加上面的偏值</returns>
+        </member>
+        <member name="M:HslControls.HslHelper.GetRhombusFromRectangle(Android.Graphics.RectF)">
+            <summary>
+            从一个矩形的图形中获取菱形的坐标数组
+            </summary>
+            <param name="rect">矩形</param>
+            <returns>数组结果</returns>
+        </member>
+        <member name="M:HslControls.HslHelper.CalculateMaxSectionFrom(System.Int32[])">
+            <summary>
+            获得数据的上限值，这个上限值是自动计算的。
+            </summary>
+            <param name="values">数据值</param>
+            <returns>数据值</returns>
+        </member>
+        <member name="M:HslControls.HslHelper.GetColorLight(Android.Graphics.Color)">
+            <summary>
+            获取当前颜色更淡的颜色信息
+            </summary>
+            <param name="color">颜色信息</param>
+            <returns>颜色</returns>
+        </member>
+        <member name="M:HslControls.HslHelper.TransRectFFromWinform(System.Drawing.RectangleF)">
+            <summary>
+            将winform的<see cref="T:System.Drawing.RectangleF"/>对象转换为<see cref="T:Android.Graphics.RectF"/>对象
+            </summary>
+            <param name="rectangleF">矩形对象</param>
+            <returns>结果信息</returns>
+        </member>
+        <member name="M:HslControls.HslHelper.TransRectFFromWinform(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            将winform的rect对象转换为<see cref="T:Android.Graphics.RectF"/>对象
+            </summary>
+            <param name="x">x</param>
+            <param name="y">y</param>
+            <param name="width">width</param>
+            <param name="height">height</param>
+            <returns>结果信息</returns>
+        </member>
+        <member name="M:HslControls.HslHelper.GetPointsFrom(System.String,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            从字符串表示的点位信息里解析出真正的点位信息
+            </summary>
+            <param name="points">字符串的点位</param>
+            <param name="soureWidth">原来的长度信息</param>
+            <param name="sourceHeight">原来的高度信息</param>
+            <param name="width">实际的宽度信息</param>
+            <param name="height">实际的高度信息</param>
+            <param name="dx">x偏移量信息</param>
+            <param name="dy">y偏移量信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:HslControls.HslHelper.AddArrayData``1(``0[]@,``0[],System.Int32)">
+            <summary>
+            一个通用的数组新增个数方法，会自动判断越界情况，越界的情况下，会自动的截断或是填充 -> 
+            A common array of new methods, will automatically determine the cross-border situation, in the case of cross-border, will be automatically truncated or filled
+            </summary>
+            <typeparam name="T">数据类型</typeparam>
+            <param name="array">原数据</param>
+            <param name="data">等待新增的数据</param>
+            <param name="max">原数据的最大值</param>
+        </member>
+        <member name="T:HslControls.HslRenderStyle">
+            <summary>
+            界面呈现的风格样式，包括矩形，椭圆，菱形
+            </summary>
+        </member>
+        <member name="F:HslControls.HslRenderStyle.Ellipse">
+            <summary>
+            椭圆
+            </summary>
+        </member>
+        <member name="F:HslControls.HslRenderStyle.Rectangle">
+            <summary>
+            矩形
+            </summary>
+        </member>
+        <member name="F:HslControls.HslRenderStyle.Rhombus">
+            <summary>
+            菱形
+            </summary>
+        </member>
+        <member name="T:HslControls.GraphDirection">
+            <summary>
+            图形的方向
+            </summary>
+        </member>
+        <member name="F:HslControls.GraphDirection.Upward">
+            <summary>
+            向上
+            </summary>
+        </member>
+        <member name="F:HslControls.GraphDirection.Downward">
+            <summary>
+            向下
+            </summary>
+        </member>
+        <member name="F:HslControls.GraphDirection.Leftward">
+            <summary>
+            向左
+            </summary>
+        </member>
+        <member name="F:HslControls.GraphDirection.Rightward">
+            <summary>
+            向右
+            </summary>
+        </member>
+        <member name="T:HslControls.ArrowDirection">
+            <summary>
+            指定要获取与项时，移动的方向 
+            </summary>
+        </member>
+        <member name="F:HslControls.ArrowDirection.Left">
+            <summary>
+            方向从左
+            </summary>
+        </member>
+        <member name="F:HslControls.ArrowDirection.Up">
+            <summary>
+            方向为向上
+            </summary>
+        </member>
+        <member name="F:HslControls.ArrowDirection.Right">
+            <summary>
+            方向为从右
+            </summary>
+        </member>
+        <member name="F:HslControls.ArrowDirection.Down">
+            <summary>
+            方向是向下
+            </summary>
+        </member>
+        <member name="T:HslControls.HslProgressStyle">
+            <summary>
+            进度条的样子
+            </summary>
+        </member>
+        <member name="F:HslControls.HslProgressStyle.Horizontal">
+            <summary>
+            进度条是横向摆放的
+            </summary>
+        </member>
+        <member name="F:HslControls.HslProgressStyle.Vertical">
+            <summary>
+            纵向的进度条
+            </summary>
+        </member>
+        <member name="F:HslControls.HslProgressStyle.Circular">
+            <summary>
+            圆形的进度条
+            </summary>
+        </member>
+        <member name="T:HslControls.CenterPoint">
+            <summary>
+            计算的基础数据 
+            </summary>
+        </member>
+        <member name="P:HslControls.CenterPoint.Point">
+            <summary>
+            中心点的位置
+            </summary>
+        </member>
+        <member name="P:HslControls.CenterPoint.Radius">
+            <summary>
+            半径
+            </summary>
+        </member>
+        <member name="P:HslControls.CenterPoint.Angle">
+            <summary>
+            角度
+            </summary>
+        </member>
+        <member name="P:HslControls.HslFactory.Color1">
+            <summary>
+            获取或设置自定义颜色1
+            </summary>
+        </member>
+        <member name="P:HslControls.HslFactory.Color2">
+            <summary>
+            获取或设置自定义颜色2
+            </summary>
+        </member>
+        <member name="P:HslControls.HslFactory.Color3">
+            <summary>
+            获取或设置自定义颜色3
+            </summary>
+        </member>
+        <member name="P:HslControls.HslFactory.Color4">
+            <summary>
+            获取或设置自定义颜色4
+            </summary>
+        </member>
+        <member name="P:HslControls.HslFactory.Color5">
+            <summary>
+            获取或设置自定义颜色5
+            </summary>
+        </member>
+        <member name="P:HslControls.HslFactory.Color6">
+            <summary>
+            获取或设置自定义颜色6
+            </summary>
+        </member>
+        <member name="P:HslControls.HslFactory.Color7">
+            <summary>
+            获取或设置自定义颜色7
+            </summary>
+        </member>
+        <member name="M:HslControls.HslFactory.OnDraw(Android.Graphics.Canvas)">
+            <summary>
+            重绘控件的
+            </summary>
+            <param name="canvas">重绘事件</param>
+        </member>
+        <member name="P:HslControls.HslGanttChart.GanttBackColor">
+            <summary>
+            获取或设置甘特图的背景颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslGanttChart.TimeSegment">
+            <summary>
+            获取或设置甘特图的时间的分段信息
+            </summary>
+        </member>
+        <member name="P:HslControls.HslGanttChart.TimeStart">
+            <summary>
+            获取或设置时间的起始信息，通常一天的起始为0，一个月的起始为1，年份的起始为自然年，比如2018
+            </summary>
+        </member>
+        <member name="P:HslControls.HslGanttChart.TimeMax">
+            <summary>
+            获取或设置时间的结束信息，通常一天的结束为24，一个月的结束为29,30,31，年份的结束为自然年，比如2019
+            </summary>
+        </member>
+        <member name="P:HslControls.HslGanttChart.TimeCount">
+            <summary>
+            获取或设置时间的总数信息，比如是按照天计算的甘特图，设置了1440，就是按照分钟计数，如果是86400，就是按照秒计数，这个传入的值密切相关
+            </summary>
+        </member>
+        <member name="P:HslControls.HslGanttChart.TimeFormate">
+            <summary>
+            获取或设置时间的显示格式，可以设置为显示小时，分钟，天等等信息，默认为{0}H
+            </summary>
+        </member>
+        <member name="P:HslControls.HslGanttChart.LeftRightOffect">
+            <summary>
+            获取或设置两边的宽度信息
+            </summary>
+        </member>
+        <member name="P:HslControls.HslGanttChart.TextSize">
+            <summary>
+            获取或设置文本的大小
+            </summary>
+        </member>
+        <member name="P:HslControls.HslGanttChart.TextColor">
+            <summary>
+            获取或设置文本的颜色
+            </summary>
+        </member>
+        <member name="M:HslControls.HslGanttChart.OnDraw(Android.Graphics.Canvas)">
+            <summary>
+            重绘控件的
+            </summary>
+            <param name="canvas">重绘事件</param>
+        </member>
+        <member name="M:HslControls.HslGanttChart.SetGanttChart(System.Int32[],Android.Graphics.Color[])">
+            <summary>
+            设置甘特图的数据信息，和颜色信息
+            </summary>
+            <param name="data">数据</param>
+            <param name="colors">颜色</param>
+        </member>
+        <member name="M:HslControls.HslGauge.OnDraw(Android.Graphics.Canvas)">
+            <summary>
+            重绘控件的
+            </summary>
+            <param name="canvas">重绘事件</param>
+        </member>
+        <member name="M:HslControls.HslGauge.GetCenterPoint">
+            <summary>
+            获取中心点的坐标
+            </summary>
+            <returns>中心点对象</returns>
+        </member>
+        <member name="P:HslControls.HslGauge.GaugeBorder">
+            <summary>
+            获取或设置仪表盘的背景色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslGauge.PointerColor">
+            <summary>
+            获取或设置指针的颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslGauge.ValueStart">
+            <summary>
+            获取或设置数值的起始值，默认为0
+            </summary>
+        </member>
+        <member name="P:HslControls.HslGauge.ValueMax">
+            <summary>
+            获取或设置数值的最大值，默认为100
+            </summary>
+        </member>
+        <member name="P:HslControls.HslGauge.Value">
+            <summary>
+            获取或设置数值的当前值，应该处于最小值和最大值之间
+            </summary>
+        </member>
+        <member name="P:HslControls.HslGauge.ValueAlarmMax">
+            <summary>
+            获取或设置数值的上限报警值，设置为超过最大值则无上限报警
+            </summary>
+        </member>
+        <member name="P:HslControls.HslGauge.ValueAlarmMin">
+            <summary>
+            获取或设置数值的下限报警值，设置为超过最大值则无上限报警
+            </summary>
+        </member>
+        <member name="P:HslControls.HslGauge.SegmentCount">
+            <summary>
+            获取或设置仪表盘的分割段数，最小为2，最大1000
+            </summary>
+        </member>
+        <member name="P:HslControls.HslGauge.UnitText">
+            <summary>
+            获取或设置仪表盘的单位描述文本
+            </summary>
+        </member>
+        <member name="P:HslControls.HslGauge.IsTextUnderPointer">
+            <summary>
+            获取或设置文本是否是指针的下面
+            </summary>
+        </member>
+        <member name="P:HslControls.HslGauge.IsBigSemiCircle">
+            <summary>
+            通常情况，仪表盘不会大于半个圆，除非本属性设置为 True
+            </summary>
+        </member>
+        <member name="P:HslControls.HslGauge.GaugeAlarmColor">
+            <summary>
+            获取或设置报警区段的颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslGauge.TextSize">
+            <summary>
+            获取或设置文本的大小
+            </summary>
+        </member>
+        <member name="P:HslControls.HslGauge.TextColor">
+            <summary>
+            获取或设置文本的颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslGauge.UseAnimation">
+            <summary>
+            当值改变的时候是否使用动画
+            </summary>
+        </member>
+        <member name="P:HslControls.HslGauge.AnimationTime">
+            <summary>
+            获取或设置动画的时间
+            </summary>
+        </member>
+        <member name="P:HslControls.HslGauge.PointerSize">
+            <summary>
+            获取或设置指针的大小值
+            </summary>
+        </member>
+        <member name="P:HslControls.HslGauge.IsAlarmRenderLine">
+            <summary>
+            当前的报警是否是线表示，还是区域表示
+            </summary>
+        </member>
+        <member name="P:HslControls.HslLanternAlarm.BottomColor">
+            <summary>
+            获取或设置底座的背景色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslLanternAlarm.LightColor">
+            <summary>
+            获取或设置报警灯的颜色，可以设置为任意的颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslLanternAlarm.AlarmColor">
+            <summary>
+            获取或设置报警状态下的颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslLanternAlarm.NormalColor">
+            <summary>
+            获取或设置正常状态的背景色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslLanternAlarm.IsAlarm">
+            <summary>
+            一旦设置本属性，启动信号灯闪烁
+            </summary>
+        </member>
+        <member name="P:HslControls.HslLanternAlarm.AlarmFlushTime">
+            <summary>
+            获取或设置报警灯闪烁的频率，单位是毫秒，默认为500
+            </summary>
+        </member>
+        <member name="M:HslControls.HslLanternAlarm.OnDraw(Android.Graphics.Canvas)">
+            <summary>
+            重绘控件的界面
+            </summary>
+            <param name="canvas">重绘的事件信息</param>
+        </member>
+        <member name="M:HslControls.HslLanternSimple.OnDraw(Android.Graphics.Canvas)">
+            <summary>
+            重绘控件的界面
+            </summary>
+            <param name="canvas">重绘的事件信息</param>
+        </member>
+        <member name="P:HslControls.HslLanternSimple.LanternBackground">
+            <summary>
+            获取或设置灯信号的前景色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslLanternSimple.CenterBackground">
+            <summary>
+            获取或设置中心点的颜色，当且仅当UseGradientColor属性为True时生效
+            </summary>
+        </member>
+        <member name="P:HslControls.HslLanternSimple.UseGradientColor">
+            <summary>
+            获取或设置当前的灯信号是否启用渐变色的画刷
+            </summary>
+        </member>
+        <member name="P:HslControls.HslLanternSimple.Text">
+            <summary>
+            获取或设置当前控件的文本
+            </summary>
+        </member>
+        <member name="P:HslControls.HslLanternSimple.TextSize">
+            <summary>
+            获取或设置文本的大小
+            </summary>
+        </member>
+        <member name="P:HslControls.HslLanternSimple.TextColor">
+            <summary>
+            获取或设置文本的颜色
+            </summary>
+        </member>
+        <member name="M:HslControls.HslLedDisplay.OnDraw(Android.Graphics.Canvas)">
+            <summary>
+            重绘控件的界面
+            </summary>
+            <param name="e">重绘的事件信息</param>
+        </member>
+        <member name="P:HslControls.HslLedDisplay.DisplayNumber">
+            <summary>
+            获取或设置数码管显示的位数
+            </summary>
+        </member>
+        <member name="P:HslControls.HslLedDisplay.LedNumberSize">
+            <summary>
+            获取或设置数码管显示的大小
+            </summary>
+        </member>
+        <member name="P:HslControls.HslLedDisplay.DisplayText">
+            <summary>
+            获取或设置数码管显示的内容
+            </summary>
+        </member>
+        <member name="P:HslControls.HslLedDisplay.DisplayBackColor">
+            <summary>
+            获取或设置数码管数字的背景色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslLedDisplay.ForeColor">
+            <summary>
+            获取或设置数码管数字的前景色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslLedDisplay.UnitText">
+            <summary>
+            获取或设置数码管数字的单位文本
+            </summary>
+        </member>
+        <member name="P:HslControls.HslLedDisplay.LeftRightOffect">
+            <summary>
+            获取或设置数码管两端的空闲长度
+            </summary>
+        </member>
+        <member name="P:HslControls.HslLedDisplay.TextSize">
+            <summary>
+            获取或设置文本的大小内容
+            </summary>
+        </member>
+        <member name="P:HslControls.HslMachineCenter.DoorOpenStatus">
+            <summary>
+            门的开关状态
+            </summary>
+        </member>
+        <member name="P:HslControls.HslMachineCenter.LightRed">
+            <summary>
+            是否显示红灯的信息
+            </summary>
+        </member>
+        <member name="P:HslControls.HslMachineCenter.LightYellow">
+            <summary>
+            是否显示黄灯的信息
+            </summary>
+        </member>
+        <member name="P:HslControls.HslMachineCenter.LightGreen">
+            <summary>
+            是否显示绿灯的信息
+            </summary>
+        </member>
+        <member name="M:HslControls.HslMachineCenter.OnDraw(Android.Graphics.Canvas)">
+            <summary>
+            重绘控件的
+            </summary>
+            <param name="canvas">重绘事件</param>
+        </member>
+        <member name="P:HslControls.HslMotor.EdgeColor">
+            <summary>
+            获取或设置电机的主题色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslMotor.CenterColor">
+            <summary>
+            获取或设置电机的比较淡的中间色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslMotor.BorderColor">
+            <summary>
+            获取或设置电机的边框的颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslMotor.Direction">
+            <summary>
+            获取或设置点击的方向，默认是向右的方向
+            </summary>
+        </member>
+        <member name="P:HslControls.HslMotor.Text">
+            <summary>
+            获取或设置当前控件的文本
+            </summary>
+        </member>
+        <member name="P:HslControls.HslMotor.TextSize">
+            <summary>
+            获取或设置文本的大小
+            </summary>
+        </member>
+        <member name="P:HslControls.HslMotor.TextColor">
+            <summary>
+            获取或设置文本的颜色
+            </summary>
+        </member>
+        <member name="M:HslControls.HslMotor.OnDraw(Android.Graphics.Canvas)">
+            <summary>
+            重绘控件的
+            </summary>
+            <param name="canvas">重绘事件</param>
+        </member>
+        <member name="P:HslControls.HslMoveText.Text">
+            <summary>
+            获取或设置当前控件的文本
+            </summary>
+        </member>
+        <member name="P:HslControls.HslMoveText.TextColor">
+            <summary>
+            获取或设置文本的颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslMoveText.TextSize">
+            <summary>
+            获取或是设置文本的大小的状态。
+            </summary>
+        </member>
+        <member name="P:HslControls.HslMoveText.PumpStyle">
+            <summary>
+            获取或设置泵控件是否是横向的还是纵向的
+            </summary>
+        </member>
+        <member name="P:HslControls.HslMoveText.MoveSpeed">
+            <summary>
+            获取或设置泵的动画速度，0为静止，正数为正向流动，负数为反向流动
+            </summary>
+        </member>
+        <member name="M:HslControls.HslMoveText.OnDraw(Android.Graphics.Canvas)">
+            <summary>
+            重绘控件的界面
+            </summary>
+            <param name="canvas">重绘的事件信息</param>
+        </member>
+        <member name="P:HslControls.HslPieChart.IsRenderPercent">
+            <summary>
+            是否显示百分比信息
+            </summary>
+        </member>
+        <member name="P:HslControls.HslPieChart.IsRenderSmall">
+            <summary>
+            是否在图形上显示占比非常小的文本信息
+            </summary>
+        </member>
+        <member name="P:HslControls.HslPieChart.TextSize">
+            <summary>
+            获取或设置文本的大小
+            </summary>
+        </member>
+        <member name="P:HslControls.HslPieChart.TextMargin">
+            <summary>
+            获取或设置文本距离，单位为像素，默认40
+            </summary>
+        </member>
+        <member name="P:HslControls.HslPieChart.PercentColor">
+            <summary>
+            获取或设置文百分比文字的颜色信息
+            </summary>
+        </member>
+        <member name="P:HslControls.HslPieChart.PercentFormat">
+            <summary>
+            获取或设置文百分比文字的格式化信息
+            </summary>
+        </member>
+        <member name="M:HslControls.HslPieChart.GetRandomColor">
+            <summary>
+            随机生成颜色，该颜色相对于白色为深色颜色
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HslControls.HslPieChart.OnDraw(Android.Graphics.Canvas)">
+            <summary>
+            重绘控件的
+            </summary>
+            <param name="canvas">重绘事件</param>
+        </member>
+        <member name="M:HslControls.HslPieChart.SetDataSource(HslControls.HslPieItem[])">
+            <summary>
+            设置显示的数据源
+            </summary>
+            <param name="source">特殊的显示对象</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:HslControls.HslPieChart.SetDataSource(System.String[],System.Int32[])">
+            <summary>
+            根据名称和值进行数据源的显示，两者的长度需要一致
+            </summary>
+            <param name="names">名称</param>
+            <param name="values">值</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="T:HslControls.HslPieItem">
+            <summary>
+            饼图的基本元素
+            </summary>
+        </member>
+        <member name="M:HslControls.HslPieItem.#ctor">
+            <summary>
+            实例化一个饼图基本元素的对象
+            </summary>
+        </member>
+        <member name="P:HslControls.HslPieItem.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:HslControls.HslPieItem.Value">
+            <summary>
+            值
+            </summary>
+        </member>
+        <member name="P:HslControls.HslPieItem.PieColor">
+            <summary>
+            饼图背景的颜色信息
+            </summary>
+        </member>
+        <member name="P:HslControls.HslPieItem.FontColor">
+            <summary>
+            文字的颜色，如果没有指定，就选择和 <seealso cref="P:HslControls.HslPieItem.PieColor"/> 一样。
+            </summary>
+        </member>
+        <member name="P:HslControls.HslPieItem.LineColor">
+            <summary>
+            线条的颜色信息
+            </summary>
+        </member>
+        <member name="P:HslControls.HslPipeLine.EdgeColor">
+            <summary>
+            获取或设置管道控件的边缘颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslPipeLine.LineCenterColor">
+            <summary>
+            获取或设置管道控件的中心颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslPipeLine.PipeTurnLeft">
+            <summary>
+            获取或设置管道控件左侧或是上方的端点朝向
+            </summary>
+        </member>
+        <member name="P:HslControls.HslPipeLine.PipeTurnRight">
+            <summary>
+            获取或设置管道控件右侧或是下方的端点朝向
+            </summary>
+        </member>
+        <member name="P:HslControls.HslPipeLine.PipeLineStyle">
+            <summary>
+            获取或设置管道控件是否是横向的还是纵向的
+            </summary>
+        </member>
+        <member name="P:HslControls.HslPipeLine.PipeLineActive">
+            <summary>
+            获取或设置管道线是否激活液体显示
+            </summary>
+        </member>
+        <member name="P:HslControls.HslPipeLine.MoveSpeed">
+            <summary>
+            获取或设置管道线液体流动的速度，0为静止，正数为正向流动，负数为反向流动
+            </summary>
+        </member>
+        <member name="P:HslControls.HslPipeLine.TimerInterval">
+            <summary>
+            获取或设置液体控制的定时器刷新的间隔，默认是50
+            </summary>
+        </member>
+        <member name="P:HslControls.HslPipeLine.PipeLineWidth">
+            <summary>
+            获取或设置中间管道线的宽度信息，默认为3
+            </summary>
+        </member>
+        <member name="P:HslControls.HslPipeLine.ActiveLineCenterColor">
+            <summary>
+            获取或设置流动状态时管道控件的中心颜色
+            </summary>
+        </member>
+        <member name="M:HslControls.HslPipeLine.OnDraw(Android.Graphics.Canvas)">
+            <summary>
+            重绘控件的外观
+            </summary>
+            <param name="canvas">Canvas的画板信息</param>
+        </member>
+        <member name="T:HslControls.HslDirectionStyle">
+            <summary>
+            指示控件的样子
+            </summary>
+        </member>
+        <member name="F:HslControls.HslDirectionStyle.Horizontal">
+            <summary>
+            控件是横向摆放的
+            </summary>
+        </member>
+        <member name="F:HslControls.HslDirectionStyle.Vertical">
+            <summary>
+            控件是纵向摆放的
+            </summary>
+        </member>
+        <member name="T:HslControls.HslPipeTurnDirection">
+            <summary>
+            管道线的端点朝向
+            </summary>
+        </member>
+        <member name="F:HslControls.HslPipeTurnDirection.Up">
+            <summary>
+            向上
+            </summary>
+        </member>
+        <member name="F:HslControls.HslPipeTurnDirection.Down">
+            <summary>
+            向下
+            </summary>
+        </member>
+        <member name="F:HslControls.HslPipeTurnDirection.Left">
+            <summary>
+            向左
+            </summary>
+        </member>
+        <member name="F:HslControls.HslPipeTurnDirection.Right">
+            <summary>
+            向右
+            </summary>
+        </member>
+        <member name="F:HslControls.HslPipeTurnDirection.None">
+            <summary>
+            无效果
+            </summary>
+        </member>
+        <member name="P:HslControls.HslProgress.ProgressBackColor">
+            <summary>
+            获取或设置进度条的背景色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslProgress.ProgressColor">
+            <summary>
+            获取或设置进度的颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslProgress.Max">
+            <summary>
+            获取或设置进度条的最大值，默认为100
+            </summary>
+        </member>
+        <member name="P:HslControls.HslProgress.Value">
+            <summary>
+            当前进度条的值，不能大于最大值或小于0
+            </summary>
+        </member>
+        <member name="P:HslControls.HslProgress.IsTextRender">
+            <summary>
+            是否显示进度
+            </summary>
+        </member>
+        <member name="P:HslControls.HslProgress.BorderColor">
+            <summary>
+            设置进度条的边框颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslProgress.UseAnimation">
+            <summary>
+            获取或设置进度条变化的时候是否采用动画效果
+            </summary>
+        </member>
+        <member name="P:HslControls.HslProgress.ProgressStyle">
+            <summary>
+            进度条的样式
+            </summary>
+        </member>
+        <member name="P:HslControls.HslProgress.TextSize">
+            <summary>
+            获取或设置文本的大小
+            </summary>
+        </member>
+        <member name="P:HslControls.HslProgress.TextColor">
+            <summary>
+            获取或设置文本的颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslProgress.AnimationTime">
+            <summary>
+            获取或设置动画的时间
+            </summary>
+        </member>
+        <member name="P:HslControls.HslProgress.TextRenderFormat">
+            <summary>
+            获取或设置自定义的格式化文本信息
+            </summary>
+        </member>
+        <member name="M:HslControls.HslProgress.OnDraw(Android.Graphics.Canvas)">
+            <summary>
+            重绘控件的
+            </summary>
+            <param name="canvas">重绘事件</param>
+        </member>
+        <member name="P:HslControls.HslProgressLine.ProgressBackColor">
+            <summary>
+            获取或设置进度条的背景色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslProgressLine.ProgressColor">
+            <summary>
+            获取或设置进度的颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslProgressLine.Max">
+            <summary>
+            获取或设置进度条的最大值，默认为100
+            </summary>
+        </member>
+        <member name="P:HslControls.HslProgressLine.Value">
+            <summary>
+            当前进度条的值，不能大于最大值或小于0
+            </summary>
+        </member>
+        <member name="P:HslControls.HslProgressLine.ProgressStyle">
+            <summary>
+            进度条的样式
+            </summary>
+        </member>
+        <member name="P:HslControls.HslProgressLine.UseAnimation">
+            <summary>
+            获取或设置进度条变化的时候是否采用动画效果
+            </summary>
+        </member>
+        <member name="P:HslControls.HslProgressLine.IsTextRender">
+            <summary>
+            是否显示进度
+            </summary>
+        </member>
+        <member name="P:HslControls.HslProgressLine.TextSize">
+            <summary>
+            获取或设置文本的大小
+            </summary>
+        </member>
+        <member name="P:HslControls.HslProgressLine.TextColor">
+            <summary>
+            获取或设置文本的颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslProgressLine.AnimationTime">
+            <summary>
+            获取或设置动画的时间
+            </summary>
+        </member>
+        <member name="P:HslControls.HslProgressLine.TextRenderFormat">
+            <summary>
+            获取或设置自定义的格式化文本信息
+            </summary>
+        </member>
+        <member name="M:HslControls.HslProgressLine.OnDraw(Android.Graphics.Canvas)">
+            <summary>
+            重绘控件的
+            </summary>
+            <param name="canvas">重绘事件</param>
+        </member>
+        <member name="P:HslControls.HslPumpOne.Text">
+            <summary>
+            获取或设置当前控件的文本
+            </summary>
+        </member>
+        <member name="P:HslControls.HslPumpOne.TextColor">
+            <summary>
+            获取或设置文本的颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslPumpOne.TextSize">
+            <summary>
+            获取或是设置文本的大小的状态。
+            </summary>
+        </member>
+        <member name="P:HslControls.HslPumpOne.PumpStyle">
+            <summary>
+            获取或设置泵控件是否是横向的还是纵向的
+            </summary>
+        </member>
+        <member name="P:HslControls.HslPumpOne.MoveSpeed">
+            <summary>
+            获取或设置泵的动画速度，0为静止，正数为正向流动，负数为反向流动
+            </summary>
+        </member>
+        <member name="P:HslControls.HslPumpOne.Color1">
+            <summary>
+            获取或设置颜色1
+            </summary>
+        </member>
+        <member name="P:HslControls.HslPumpOne.Color2">
+            <summary>
+            获取或设置颜色2
+            </summary>
+        </member>
+        <member name="P:HslControls.HslPumpOne.Color3">
+            <summary>
+            获取或设置颜色3
+            </summary>
+        </member>
+        <member name="P:HslControls.HslPumpOne.Color4">
+            <summary>
+            获取或设置颜色4
+            </summary>
+        </member>
+        <member name="P:HslControls.HslPumpOne.Color5">
+            <summary>
+            获取或设置颜色5
+            </summary>
+        </member>
+        <member name="P:HslControls.HslPumpOne.Color6">
+            <summary>
+            获取或设置颜色6
+            </summary>
+        </member>
+        <member name="P:HslControls.HslPumpOne.Color7">
+            <summary>
+            获取或设置颜色7
+            </summary>
+        </member>
+        <member name="P:HslControls.HslPumpOne.Entrance">
+            <summary>
+            入口管道的位置
+            </summary>
+        </member>
+        <member name="P:HslControls.HslPumpOne.Export">
+            <summary>
+            出口管道的位置
+            </summary>
+        </member>
+        <member name="M:HslControls.HslPumpOne.OnDraw(Android.Graphics.Canvas)">
+            <summary>
+            重绘控件的界面
+            </summary>
+            <param name="canvas">重绘的事件信息</param>
+        </member>
+        <member name="T:HslControls.HslSignature">
+            <summary>
+            一个签名的控件
+            </summary>
+        </member>
+        <member name="M:HslControls.HslSignature.ClearSign">
+            <summary>
+            清除当前所有的签名内容
+            </summary>
+        </member>
+        <member name="M:HslControls.HslSignature.SaveBitmap">
+            <summary>
+            获取签名的图像
+            </summary>
+            <returns>图片信息</returns>
+        </member>
+        <member name="M:HslControls.HslSignature.SaveBitmap(System.String)">
+            <summary>
+            获取签名的图像
+            </summary>
+            <returns>图片信息</returns>
+        </member>
+        <member name="P:HslControls.HslStatusManagement.SpacingOffect">
+            <summary>
+            获取或设置状态间距信息
+            </summary>
+        </member>
+        <member name="P:HslControls.HslStatusManagement.RowCount">
+            <summary>
+            获取或设置状态集的行数信息
+            </summary>
+        </member>
+        <member name="P:HslControls.HslStatusManagement.ColCount">
+            <summary>
+            获取或设置状态集的列数信息
+            </summary>
+        </member>
+        <member name="P:HslControls.HslStatusManagement.IsRenderBorder">
+            <summary>
+            获取或设置是否显示边框信息
+            </summary>
+        </member>
+        <member name="P:HslControls.HslStatusManagement.RenderStyle">
+            <summary>
+            获取或设置状态集的显示样式，支持矩形，椭圆，菱形
+            </summary>
+        </member>
+        <member name="P:HslControls.HslStatusManagement.GeneralColor">
+            <summary>
+            获取或设置所有状态集合体的默认背景色，设置本数据将会强制所有的颜色恢复初始化
+            </summary>
+        </member>
+        <member name="P:HslControls.HslStatusManagement.BorderColor">
+            <summary>
+            获取或设置所有状态集合体的边框颜色
+            </summary>
+        </member>
+        <member name="M:HslControls.HslStatusManagement.OnDraw(Android.Graphics.Canvas)">
+            <summary>
+            重绘控件的界面
+            </summary>
+            <param name="canvas">重绘的事件信息</param>
+        </member>
+        <member name="M:HslControls.HslStatusManagement.SetColorByLocation(System.Int32,System.Int32,Android.Graphics.Color)">
+            <summary>
+            通过行列信息来设置某个点的颜色
+            </summary>
+            <param name="rowIndex">行索引</param>
+            <param name="colIndex">列索引</param>
+            <param name="color">颜色信息</param>
+        </member>
+        <member name="M:HslControls.HslStatusManagement.ResetColorByLocation(System.Int32,System.Int32)">
+            <summary>
+            通过行列信息来复位某个点的颜色
+            </summary>
+            <param name="rowIndex">行索引</param>
+            <param name="colIndex">列索引</param>
+        </member>
+        <member name="M:HslControls.HslStatusManagement.SetColorByLocation(Android.Graphics.Point,Android.Graphics.Color)">
+            <summary>
+            通过行列信息来设置某个点的颜色
+            </summary>
+            <param name="point">行列信息</param>
+            <param name="color">颜色信息</param>
+        </member>
+        <member name="M:HslControls.HslStatusManagement.ResetColorByLocation(Android.Graphics.Point)">
+            <summary>
+            通过行列信息来复位某个点的颜色
+            </summary>
+            <param name="point">行列信息</param>
+        </member>
+        <member name="M:HslControls.HslStatusManagement.SetColorByLocation(Android.Graphics.Point[],Android.Graphics.Color)">
+            <summary>
+            批量设置一些点的颜色信息
+            </summary>
+            <param name="points">点信息</param>
+            <param name="color">颜色信息</param>
+        </member>
+        <member name="M:HslControls.HslStatusManagement.ResetColorByLocation(Android.Graphics.Point[])">
+            <summary>
+            批量复位一些点的颜色信息
+            </summary>
+            <param name="points">点信息</param>
+        </member>
+        <member name="M:HslControls.HslStatusManagement.SetColorByRow(System.Int32,Android.Graphics.Color)">
+            <summary>
+            将某一行的颜色都设置为指定的颜色
+            </summary>
+            <param name="rowIndex">行索引</param>
+            <param name="color">颜色信息</param>
+        </member>
+        <member name="M:HslControls.HslStatusManagement.SetColorByRow(System.Int32,Android.Graphics.Color[])">
+            <summary>
+            将某一行的颜色设置为指定的颜色
+            </summary>
+            <param name="rowIndex">行索引</param>
+            <param name="colors">颜色信息</param>
+        </member>
+        <member name="M:HslControls.HslStatusManagement.ResetColorByRow(System.Int32)">
+            <summary>
+            将某一行的颜色都复位为默认的颜色
+            </summary>
+            <param name="rowIndex">行索引</param>
+        </member>
+        <member name="M:HslControls.HslStatusManagement.SetColorByCol(System.Int32,Android.Graphics.Color)">
+            <summary>
+            将某一列的颜色都设置为指定的颜色
+            </summary>
+            <param name="colIndex">列索引</param>
+            <param name="color">颜色信息</param>
+        </member>
+        <member name="M:HslControls.HslStatusManagement.SetColorByCol(System.Int32,Android.Graphics.Color[])">
+            <summary>
+            将某一列的颜色设置为指定的颜色
+            </summary>
+            <param name="colIndex">列索引</param>
+            <param name="colors">颜色信息</param>
+        </member>
+        <member name="M:HslControls.HslStatusManagement.ResetColorByCol(System.Int32)">
+            <summary>
+            将某一列的颜色都复位为默认的颜色
+            </summary>
+            <param name="colIndex">列索引</param>
+        </member>
+        <member name="M:HslControls.HslStatusManagement.SetColorAll(Android.Graphics.Color)">
+            <summary>
+            将所有的位置的颜色都更新到指定的颜色
+            </summary>
+            <param name="color">颜色信息</param>
+        </member>
+        <member name="M:HslControls.HslStatusManagement.SetColorAll(Android.Graphics.Color[])">
+            <summary>
+            将所有的位置的颜色都更新到指定的颜色
+            </summary>
+            <param name="colors">颜色信息</param>
+        </member>
+        <member name="M:HslControls.HslStatusManagement.ResetColorAll">
+            <summary>
+            将所有的位置的颜色都复位到指定的颜色
+            </summary>
+        </member>
+        <member name="M:HslControls.HslStatusManagement.GetColorFromPosition(System.Int32,System.Int32)">
+            <summary>
+            获取指定位置的颜色信息，指定行索引，列索引
+            </summary>
+            <param name="rowIndex">行索引</param>
+            <param name="colIndex">列索引</param>
+            <returns>颜色信息</returns>
+        </member>
+        <member name="P:HslControls.HslThermometer.ValueStart">
+            <summary>
+            获取或设置数值的起始值，默认为0
+            </summary>
+        </member>
+        <member name="P:HslControls.HslThermometer.ValueMax">
+            <summary>
+            获取或设置数值的最大值，默认为100
+            </summary>
+        </member>
+        <member name="P:HslControls.HslThermometer.Value">
+            <summary>
+            获取或设置数值的当前值，应该处于最小值和最大值之间
+            </summary>
+        </member>
+        <member name="P:HslControls.HslThermometer.SegmentCount">
+            <summary>
+            获取或设置温度计的分割段数，最小为2，最大1000
+            </summary>
+        </member>
+        <member name="P:HslControls.HslThermometer.TemperatureColor">
+            <summary>
+            获取或设置温度计的颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslThermometer.TemperatureBackColor">
+            <summary>
+            获取或设置温度计的颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslThermometer.IsRenderText">
+            <summary>
+            获取或设置是否显示温度计的数值
+            </summary>
+        </member>
+        <member name="P:HslControls.HslThermometer.LeftUnitText">
+            <summary>
+            获取或设置左侧的单位显示文本，默认是℃
+            </summary>
+        </member>
+        <member name="P:HslControls.HslThermometer.RightUnitText">
+            <summary>
+            获取或设置右侧的单位显示文本，默认是°F
+            </summary>
+        </member>
+        <member name="P:HslControls.HslThermometer.TextSize">
+            <summary>
+            获取或设置文本的大小
+            </summary>
+        </member>
+        <member name="P:HslControls.HslThermometer.TextColor">
+            <summary>
+            获取或设置文本的颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslThermometer.UseAnimation">
+            <summary>
+            当值改变的时候是否使用动画
+            </summary>
+        </member>
+        <member name="P:HslControls.HslThermometer.AnimationTime">
+            <summary>
+            获取或设置动画的时间
+            </summary>
+        </member>
+        <member name="P:HslControls.HslThermometer.RightDataTransfer">
+            <summary>
+            获取或设置右侧轴的数值和左边的关系
+            </summary>
+        </member>
+        <member name="M:HslControls.HslThermometer.OnDraw(Android.Graphics.Canvas)">
+            <summary>
+            重绘控件的
+            </summary>
+            <param name="canvas">重绘事件</param>
+        </member>
+        <member name="P:HslControls.HslVacuumPump.Text">
+            <summary>
+            获取或设置当前控件的文本
+            </summary>
+        </member>
+        <member name="P:HslControls.HslVacuumPump.TextColor">
+            <summary>
+            获取或设置文本的颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslVacuumPump.TextSize">
+            <summary>
+            获取或是设置文本的大小的状态。
+            </summary>
+        </member>
+        <member name="P:HslControls.HslVacuumPump.PumpStyle">
+            <summary>
+            获取或设置泵控件是否是横向的还是纵向的
+            </summary>
+        </member>
+        <member name="P:HslControls.HslVacuumPump.MoveSpeed">
+            <summary>
+            获取或设置泵的动画速度，0为静止，正数为正向流动，负数为反向流动
+            </summary>
+        </member>
+        <member name="P:HslControls.HslVacuumPump.Color1">
+            <summary>
+            获取或设置颜色1
+            </summary>
+        </member>
+        <member name="P:HslControls.HslVacuumPump.Color2">
+            <summary>
+            获取或设置颜色2
+            </summary>
+        </member>
+        <member name="P:HslControls.HslVacuumPump.Color3">
+            <summary>
+            获取或设置颜色3
+            </summary>
+        </member>
+        <member name="P:HslControls.HslVacuumPump.Color4">
+            <summary>
+            获取或设置颜色4
+            </summary>
+        </member>
+        <member name="M:HslControls.HslVacuumPump.OnDraw(Android.Graphics.Canvas)">
+            <summary>
+            重绘控件的界面
+            </summary>
+            <param name="canvas">重绘的事件信息</param>
+        </member>
+        <member name="P:HslControls.HslValves.EdgeColor">
+            <summary>
+            获取或设置边缘的颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslValves.Text">
+            <summary>
+            获取或设置当前控件的文本
+            </summary>
+        </member>
+        <member name="P:HslControls.HslValves.TextSize">
+            <summary>
+            获取或设置文本的大小
+            </summary>
+        </member>
+        <member name="P:HslControls.HslValves.TextColor">
+            <summary>
+            获取或设置文本的颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslValves.PipeLineStyle">
+            <summary>
+            获取或设置阀门控件是否是横向的还是纵向的
+            </summary>
+        </member>
+        <member name="M:HslControls.HslValves.OnDraw(Android.Graphics.Canvas)">
+            <summary>
+            重绘控件的
+            </summary>
+            <param name="canvas">重绘事件</param>
+        </member>
+        <member name="T:HslControls.HslWaterBox">
+            <summary>
+            一个水箱的控件
+            </summary>
+        </member>
+        <member name="P:HslControls.HslWaterBox.Value">
+            <summary>
+            获取或设置水池的高度信息，值为百分比的内容。
+            </summary>
+        </member>
+        <member name="P:HslControls.HslWaterBox.BorderColor">
+            <summary>
+            获取或设置水池边框的颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslWaterBox.EdgeColor">
+            <summary>
+            获取或设置水池边界的颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslWaterBox.WaterColor">
+            <summary>
+            获取或设置水池的颜色
+            </summary>
+        </member>
+        <member name="P:HslControls.HslWaterBox.EdgeWidth">
+            <summary>
+            获取或设置水池边界的宽度
+            </summary>
+        </member>
+        <member name="P:HslControls.HslWaterBox.Text">
+            <summary>
+            获取或设置当前控件的文本
+            </summary>
+        </member>
+        <member name="P:HslControls.HslWaterBox.TextColor">
+            <summary>
+            获取或设置文本的颜色信息
+            </summary>
+        </member>
+        <member name="P:HslControls.HslWaterBox.TextSize">
+            <summary>
+            获取或设置文本的大小
+            </summary>
+        </member>
+        <member name="P:HslControls.HslWaterBox.UseAnimation">
+            <summary>
+            当值改变的时候是否使用动画
+            </summary>
+        </member>
+        <member name="P:HslControls.HslWaterBox.AnimationTime">
+            <summary>
+            获取或设置动画的时间
+            </summary>
+        </member>
+        <member name="M:HslControls.HslWaterBox.OnDraw(Android.Graphics.Canvas)">
+            <summary>
+            重绘控件的界面
+            </summary>
+            <param name="canvas">重绘的事件信息</param>
+        </member>
+    </members>
+</doc>
