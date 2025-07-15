@@ -23,7 +23,7 @@ namespace WindowsFormsApp1
 
         public Form4()
         {
-            InitializeComponent(); // 这个方法在 Form4.Designer.cs 中定义，但我们在这里手动实现
+            InitializeComponent(); 
             InitializeCustomComponents();
         }
 
@@ -85,8 +85,8 @@ namespace WindowsFormsApp1
             linkLabelProject.LinkClicked += (s, ev) => {
                 try
                 {
-                    // 在这里可以放上您的GitHub仓库地址或者邮箱链接
-                    Process.Start("https://github.com");
+                
+                    Process.Start("https://github.com/xiaonuoxiaonuo/-first-repository");
                 }
                 catch (Exception ex)
                 {
@@ -118,11 +118,10 @@ namespace WindowsFormsApp1
             this.Controls.Add(lblCopyright);
             this.Controls.Add(btnOk);
 
-            this.AcceptButton = btnOk; // 按下回车键时，等同于点击“确定”按钮
+            this.AcceptButton = btnOk; 
         }
 
         // Designer.cs 文件中通常会有一个空的 InitializeComponent 方法
-        // 如果您的项目是手动创建文件，可以忽略此方法
        
     }
 }
