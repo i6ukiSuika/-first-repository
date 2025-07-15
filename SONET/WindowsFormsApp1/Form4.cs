@@ -86,7 +86,7 @@ namespace WindowsFormsApp1
                 try
                 {
                 
-                    Process.Start("https://github.com/xiaonuoxiaonuo/-first-repository");
+                    Process.Start("https://github.com/i6ukiSuika/-first-repository");
                 }
                 catch (Exception ex)
                 {
