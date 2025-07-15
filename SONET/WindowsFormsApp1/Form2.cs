@@ -73,51 +73,7 @@ namespace WindowsFormsApp1
             return "N/A";
         }
 
-        // ================== 核心修正：关闭逻辑 ==================
-
-        /// <summary>
-        /// 一个安全的关闭方法，用于停止所有后台操作
-        /// </summary>
-        public void Shutdown()
-        {
-            // 1. 立刻注销数据接收事件，这是防止竞态条件的关键
-            if (serialPort1 != null)
-            {
-                serialPort1.DataReceived -= SerialPort_DataReceived;
-            }
-
-            // 2. 关闭串口
-            if (IsSerialPortOpen())
-            {
-                try
-                {
-                    serialPort1.Close();
-                }
-                catch
-                {
-                    // 在关闭过程中，忽略任何可能发生的异常
-                }
-            }
-        }
-
-        /// <summary>
-        /// 处理窗口关闭事件
-        /// </summary>
-        private void Form2_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (IsPermanentClose)
-            {
-                // 如果是主程序发出的永久关闭指令，则执行安全关闭流程
-                Shutdown();
-                e.Cancel = false; // 允许窗口被销毁
-            }
-            else
-            {
-                // 否则（比如用户点击了X），取消关闭并最小化窗口
-                e.Cancel = true; // 取消关闭事件
-                this.WindowState = FormWindowState.Minimized; // 将窗口最小化到任务栏
-            }
-        }
+        
 
         // ================== 窗体和控件事件 ==================
 
